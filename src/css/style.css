@@ -1,0 +1,202 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.promo {
+  min-height: 680px;
+  padding: 23px 0 82px 0;
+  background: url("../img/main.jpg") no-repeat center;
+}
+
+.promo__text {
+  margin-bottom: 17px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.promo__header {
+  text-align: center;
+  color: #ec644b;
+  font-family: "Roboto Condensed";
+  font-size: 72px;
+  line-height: 72px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.promo__subheader {
+  margin-bottom: 38px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Roboto Condensed";
+  font-size: 42px;
+  line-height: 42px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.promo__underline {
+  margin-bottom: 27px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.promo__line {
+  width: 390px;
+  height: 1px;
+  background-color: #fff;
+}
+
+.promo__circle {
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.promo__items {
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+.promo__item {
+  width: 260px;
+  text-align: center;
+}
+
+.promo__icon {
+  margin-bottom: 15px;
+}
+
+.promo__desc {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.header {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.header__nav {
+  width: 751px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.header__contacts {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  padding-left: 25px;
+  text-align: right;
+}
+
+.header__call {
+  padding-bottom: 5px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 14px;
+}
+
+.header__phone {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.header__phone:hover {
+  color: #ffffff;
+}
+
+.menu {
+  width: 600px;
+  height: 23px;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+
+.menu__item {
+  padding-right: 13px;
+  line-height: 23px;
+  border-right: 1px dotted rgba(255, 255, 255, 0.4);
+}
+
+.menu__item:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.menu__link {
+  color: #ffffff;
+  font-size: 15px;
+  padding-bottom: 5px;
+}
+
+.menu__link:hover {
+  color: #ec644b;
+  text-decoration: none;
+  border-bottom: 1px solid #ec644b;
+}
+
+.button {
+  width: 160px;
+  height: 45px;
+  border: none;
+  border-radius: 22.5px;
+  background-color: #ec644b;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.button_large {
+  width: 230px;
+  height: 57px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 15px;
+}
+
+.promo__button {
+  display: block;
+  margin: 0 auto;
+}
