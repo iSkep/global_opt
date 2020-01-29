@@ -361,10 +361,6 @@
   border-radius: 50%;
 }
 
-.subsection__icon_orange-border {
-  border-color: #e93b3b;
-}
-
 .subsection__title {
   margin-bottom: 10px;
   text-align: center;
@@ -463,6 +459,7 @@
 }
 
 .feed-form {
+  position: relative;
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
@@ -484,13 +481,32 @@
   line-height: 13px;
 }
 
-.feed-form input:nth-child(3) {
+.feed-form input:nth-child(4) {
   margin-right: 0;
 }
 
 .feed-form input:focus {
   outline: none;
   box-shadow: 0 0 3px #ec644b;
+}
+
+.feed-form__border {
+  height: 166px;
+  width: 100%;
+  position: absolute;
+  top: -68px;
+  left: 0;
+  z-index: -1;
+  border: 1px solid #898989;
+}
+
+.feed-form__icon {
+  border-color: #e93b3b;
+  background-color: #fff;
+}
+
+.feed-form__outline {
+  outline: 13px solid #ffffff;
 }
 
 .line-break {
