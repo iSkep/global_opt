@@ -319,3 +319,40 @@
   -moz-text-align-last: center;
        text-align-last: center;
 }
+
+.subsection {
+  height: 342px;
+  padding: 58px 0 75px 0;
+  background: url("../img/agent_bg.jpg") no-repeat center;
+}
+
+.subsection__icon {
+  width: 102px;
+  height: 102px;
+  margin: 0 auto 20px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
+
+.subsection__title {
+  margin-bottom: 10px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.subsection__subtitle {
+  text-align: center;
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 27px;
+}
