@@ -565,3 +565,8 @@
   font-size: 14px;
   line-height: 20px;
 }
+
+.feedback {
+  min-height: 470px;
+  margin: 51px 0 65px 0;
+}
