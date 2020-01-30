@@ -198,6 +198,7 @@
 .button_large {
   width: 230px;
   height: 57px;
+  border-radius: 28.5px;
   color: #ffffff;
   font-size: 15px;
   font-weight: 700;
@@ -345,6 +346,7 @@
   height: 342px;
   padding: 58px 0 75px 0;
   background: url("../img/agent_bg.jpg") no-repeat center;
+  background: url("../img/managers_bg.jpg") no-repeat center;
 }
 
 .subsection__icon {
@@ -512,4 +514,54 @@
 .line-break {
   flex-basis: 100%;
   height: 30px;
+}
+
+.scheme {
+  min-height: 454px;
+  padding: 51px 0 0 0;
+  background-color: #f3f3f3;
+}
+
+.scheme__wrapper {
+  margin: 30px 0 0 0;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.scheme__item {
+  width: 23%;
+  margin-right: 2.6599%;
+  margin-bottom: 46px;
+  text-align: center;
+}
+
+.scheme__item:nth-child(4) {
+  margin-right: 0;
+}
+
+.scheme__item:nth-child(7) {
+  margin-right: 0;
+}
+
+.scheme__icon {
+  margin-bottom: 12px;
+}
+
+.scheme__title {
+  margin: 0;
+  padding-bottom: 3px;
+  color: #ec644b;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.scheme__desc {
+  margin: 0;
+  color: #3a3a3a;
+  font-size: 14px;
+  line-height: 20px;
 }
