@@ -1,3 +1,43 @@
 .feedback
     min-height: 470px
-    margin: 51px 0 65px 0
+    margin: 51px 0 0 0
+    &__item
+        width: 615px
+        margin: 31px auto 65px
+        text-align: center
+    &__photo
+        width: 114px
+        height: 114px
+        margin: 0 auto 19px
+    &__name
+        font-size: 18px
+        font-weight: 700
+        color: #3a3a3a
+    &__text
+        font-weight: 300
+        font-size: 14px
+        line-height: 22px
+        color: #3a3a3a
+    &__slider
+        position: relative
+        .slick-prev,
+        .slick-next
+            position: absolute
+            background: none
+            border: none
+            &:focus
+                outline: none
+        .slick-prev
+            top: 62px
+            left: calc(50% - 116px)
+            z-index: 10
+        .slick-next
+            top: 62px
+            right: calc(50% - 116px)
+            z-index: 10
+
+.slick-slide
+    opacity: 0.3
+
+.slick-current
+    opacity: 1
