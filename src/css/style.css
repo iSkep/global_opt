@@ -571,6 +571,11 @@
   margin: 51px 0 0 0;
 }
 
+.feedback__wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 .feedback__item {
   width: 615px;
   margin: 31px auto 65px;
@@ -630,4 +635,20 @@
 
 .slick-current {
   opacity: 1;
+}
+
+/* slide when not active/center*/
+.feedback__slider .slick-slide,
+.feedback__slider .slick-slide[aria-hidden="true"]:not(.slick-cloned) ~ .slick-cloned[aria-hidden="true"] {
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  -webkit-transition: 0.3s all ease-in;
+  transition: 0.3s all ease-in;
+}
+
+/* slide when active/center */
+.feedback__slider .slick-center,
+.feedback__slider .slick-slide[aria-hidden="true"]:not([tabindex="-1"]) + .slick-cloned[aria-hidden="true"] {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }

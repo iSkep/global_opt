@@ -1,6 +1,9 @@
 .feedback
     min-height: 470px
     margin: 51px 0 0 0
+    &__wrapper
+        max-width: 1920px
+        margin: 0 auto
     &__item
         width: 615px
         margin: 31px auto 65px
@@ -41,3 +44,16 @@
 
 .slick-current
     opacity: 1
+
+ /*Slick slider center-mode animation fix*/   
+/* slide when not active/center*/
+.feedback__slider .slick-slide,
+.feedback__slider .slick-slide[aria-hidden="true"]:not(.slick-cloned) ~ .slick-cloned[aria-hidden="true"]
+    transform: scale(0.6)
+    transition: 0.3s all ease-in
+
+/* slide when active/center */
+.feedback__slider .slick-center,
+.feedback__slider .slick-slide[aria-hidden="true"]:not([tabindex="-1"]) + .slick-cloned[aria-hidden="true"]
+    transform: scale(1)
+
