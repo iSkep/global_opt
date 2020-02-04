@@ -469,10 +469,10 @@
   flex-wrap: wrap;
 }
 
-.feed-form input {
+.feed-form__item {
   width: 268px;
   height: 45px;
-  padding: 17px 17px 17px 28px;
+  padding: 17px 28px;
   margin-right: 6px;
   border: 1px solid rgba(0, 0, 0, 0.21);
   background-color: #ffffff;
@@ -483,13 +483,24 @@
   line-height: 13px;
 }
 
-.feed-form input:nth-child(4) {
+.feed-form__item:nth-child(4) {
   margin-right: 0;
 }
 
-.feed-form input:focus {
+.feed-form__item:focus {
   outline: none;
   box-shadow: 0 0 3px #ec644b;
+}
+
+.feed-form__item_wide {
+  width: 813px;
+  height: 71px;
+  border-radius: 8px;
+}
+
+.feed-form__comment {
+  margin: 8px 0 17px 0;
+  resize: none;
 }
 
 .feed-form__border {
@@ -514,6 +525,39 @@
 .line-break {
   flex-basis: 100%;
   height: 30px;
+}
+
+.form-container {
+  max-width: 896px;
+  min-height: 297px;
+  margin: 0 auto;
+  padding: 0 0 25px 0;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.form-container__header {
+  padding: 20px 0 0 0;
+  margin: 0 0 18px 0;
+  height: 68px;
+  background-color: #25333c;
+}
+
+.form-container__title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.form-container__subtitle {
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
 }
 
 .scheme {
@@ -577,7 +621,7 @@
 }
 
 .feedback__item {
-  width: 615px;
+  width: 600px;
   margin: 31px auto 65px;
   text-align: center;
 }
@@ -595,6 +639,9 @@
 }
 
 .feedback__text {
+  text-align: justify;
+  -moz-text-align-last: center;
+       text-align-last: center;
   font-weight: 300;
   font-size: 14px;
   line-height: 22px;
@@ -631,6 +678,7 @@
 
 .slick-slide {
   opacity: 0.3;
+  outline: none;
 }
 
 .slick-current {
@@ -651,4 +699,10 @@
 .feedback__slider .slick-slide[aria-hidden="true"]:not([tabindex="-1"]) + .slick-cloned[aria-hidden="true"] {
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+.questions {
+  height: 438px;
+  padding: 62px 0 79px 0;
+  background: url("../img/form_bg.jpg") no-repeat center;
 }

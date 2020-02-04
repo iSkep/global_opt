@@ -215,9 +215,9 @@
             </div>
             <form class="feed-form" action="#">
                 <div class="feed-form__border"></div>
-                <input type="text" placeholder="Ваше имя...">
-                <input type="tel" placeholder="Ваш номер телефона...">
-                <input type="email" placeholder="Ваш e-mail...">
+                <input class="feed-form__item" type="text" placeholder="Ваше имя..." name="name">
+                <input class="feed-form__item" type="tel" placeholder="Ваш номер телефона..." name="phone">
+                <input class="feed-form__item" type="email" placeholder="Ваш e-mail..." name="email">
                 <div class="line-break"></div>
                 <button class="button button_submit feed-form__outline">Отправить заявку</button>
             </form>
@@ -329,6 +329,23 @@
                 </div>
             </div>
         </div>   
+    </section>
+    <section class="questions">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-container__header">
+                    <div class="form-container__title">Остались вопросы?</div>
+                    <div class="form-container__subtitle">Напишите нам!</div>
+                </div>
+                <form class="feed-form" action="#">
+                    <input class="feed-form__item" type="text" placeholder="Ваше имя..." name="name">
+                    <input class="feed-form__item" type="tel" placeholder="Ваш номер телефона..." name="phone">
+                    <input class="feed-form__item" type="email" placeholder="Ваш e-mail..." name="email">
+                    <textarea class="feed-form__item feed-form__item_wide feed-form__comment" placeholder="Сообщение..." name="comment"></textarea>
+                    <button class="button button_submit">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
     </section>
     
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
