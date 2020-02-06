@@ -111,17 +111,19 @@
           align-items: center;
 }
 
-.header__contacts {
+.callback {
+  width: 340px;
   display: -webkit-box;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-          flex-direction: column;
-  padding-left: 25px;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   text-align: right;
 }
 
-.header__call {
+.callback__text {
   padding-bottom: 5px;
   color: #ffffff;
   font-size: 14px;
@@ -129,14 +131,14 @@
   line-height: 14px;
 }
 
-.header__phone {
+.callback__phone {
   font-size: 19px;
   font-weight: 700;
   line-height: 19px;
   color: #ffffff;
 }
 
-.header__phone:hover {
+.callback__phone:hover {
   color: #ffffff;
 }
 
@@ -705,4 +707,69 @@
   height: 438px;
   padding: 62px 0 79px 0;
   background: url("../img/form_bg.jpg") no-repeat center;
+}
+
+.map {
+  height: 500px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+}
+
+.footer {
+  height: 150px;
+  padding: 24px 0 0 0;
+  background-color: #25333c;
+}
+
+.footer__wrap {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.footer__logo {
+  width: 68px;
+  height: 71px;
+}
+
+.footer__logo img {
+  width: 100%;
+}
+
+.footer__content {
+  width: 520px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.footer__title {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.footer__callback {
+  margin-left: auto;
+}
+
+.footer__line {
+  width: 1170px;
+  height: 1px;
+  margin: 30px auto 0 auto;
+  border: none;
+  color: #667076;
+  background-color: #667076;
 }
