@@ -48,7 +48,7 @@
                         <div class="callback__text">Есть вопросы?</div>
                         <a href="tel:+79264230100" class="callback__phone">+7 (926) 423 01 00</a>
                     </div>
-                    <button class="button">Перезвоните мне</button>
+                    <button class="button" data-modal="consultation">Перезвоните мне</button>
                 </div>
 
             </header>
@@ -78,7 +78,7 @@
                     <div class="promo__desc">Экспресс доставка 1-2 дня из Гуанчжоу в Москву от 25$/кг</div>
                 </div>
             </div>
-            <button class="promo__button button button_large">Получить расчет</button>
+            <button class="promo__button button button_large" data-modal="calculation">Получить расчет</button>
         </div>
     </section>
     <section class="advantages">
@@ -300,7 +300,7 @@
                     </div>
                     <div class="feedback__desc">
                         <div class="feedback__name">Алёна Иванова</div>
-                        <div class="feedback__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eligendi perferendis reiciendis exercitationem odit aliquid ex maxime</div>
+                        <div class="feedback__text">Одна из немногих компаний, работающая без перебоев. Менеджеры всегда на связи и готовы проконсультировать по любому вопросу. Цены приемлемы, товар приходит без повреждений.</div>
                     </div>
                 </div>
                 <div class="feedback__item">
@@ -309,7 +309,7 @@
                     </div>
                     <div class="feedback__desc">
                         <div class="feedback__name">Дмитрий Ласточкин</div>
-                        <div class="feedback__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloribus error id suscipit modi nam blanditiis officiis, perferendis magni, in fugiat ducimus eos quisquam. Nulla illum non commodi dolores possimus.</div>
+                        <div class="feedback__text">В последнее время появилась необходимость в быстрой доставке товаров из Китая. Обратился в эту компанию и с тех пор постоянно использую их услуги авиадоставка. Цены актуальные, сервис на достойном уровне, сроки выдерживают. Могу рекомендовать их как надежного партнера.</div>
                     </div>
                 </div>
                 <div class="feedback__item">
@@ -318,7 +318,7 @@
                     </div>
                     <div class="feedback__desc">
                         <div class="feedback__name">Прохорова Аня</div>
-                        <div class="feedback__text">Всё супер</div>
+                        <div class="feedback__text">Это был мой первый опыт отправки груза в Россию из Китая. Все дошло быстро, упаковано качественно. Спасибо!</div>
                     </div>
                 </div>
                 <div class="feedback__item">
@@ -327,7 +327,7 @@
                     </div>
                     <div class="feedback__desc">
                         <div class="feedback__name">Сергей Валиев</div>
-                        <div class="feedback__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quibusdam ullam iure fuga reprehenderit dolorum nam non alias beatae ipsum. Voluptates repellendus, exercitationem consequatur consectetur sapiente asperiores consequuntur quam assumenda.</div>
+                        <div class="feedback__text">Быстро, качественно, не дорого.</div>
                     </div>
                 </div>
             </div>
@@ -366,11 +366,85 @@
                     <div class="callback__text">Есть вопросы?</div>
                     <a href="tel:+79264230100" class="callback__phone">+7 (926) 423 01 00</a>
                 </div>
-                <button class="button">Перезвоните мне</button>
+                <button class="button" data-modal="consultation">Перезвоните мне</button>
             </div>
         </div>
         <hr class="footer__line">
     </footer>
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Просто заполните форму заявки</div>
+            <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+            <form class="feed-form feed-form_column" action="#">
+                <input class="feed-form__item" type="text" placeholder="Ваше имя..." name="name">
+                <input class="feed-form__item" type="tel" placeholder="Ваш номер телефона..." name="phone">
+                <input class="feed-form__item" type="email" placeholder="Ваш e-mail..." name="email">
+                <textarea class="feed-form__item feed-form__item_wide feed-form__comment" placeholder="Сообщение..." name="comment"></textarea>
+                <button class="button button_submit">Отправить заявку</button>
+            </form>
+        </div>
+        <div class="modal" id="calc">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Рассчитайте стоимость доставки</div>
+            <form class="feed-form" action="#">
+                <div class="modal-calc">
+                    <div class="modal-calc__item">
+                        <label class="modal-calc__label" for="modal-calc__weight">Вес</label>
+                        <input class="feed-form__item feed-form__item_small" id="modal-calc__weight" type="text" name="weight" autocomplete="off" placeholder="кг">
+                    </div>
+                    <div class="modal-calc__item">
+                        <label class="modal-calc__label" for="modal-calc__length">Длина</label>
+                        <input class="feed-form__item feed-form__item_small" id="modal-calc__length" type="text" name="length" autocomplete="off" placeholder="см">
+                    </div>
+                    <div class="modal-calc__item">
+                        <label class="modal-calc__label" for="modal-calc__width">Ширина</label>
+                        <input class="feed-form__item feed-form__item_small" id="modal-calc__width" type="text" name="width" autocomplete="off" placeholder="см">
+                    </div>
+                    <div class="modal-calc__item">
+                        <label class="modal-calc__label" for="modal-calc__height">Высота</label>
+                        <input class="feed-form__item feed-form__item_small" id="modal-calc__height" type="text" name="height" autocomplete="off" placeholder="см">
+                    </div>
+                </div>
+                <select class="modal-calc__type" name="transport" id="typeselect">
+                    <option value="1">Доставка морем</option>
+                    <option value="2">Ж/Д доставка</option>
+                    <option value="3">Автодоставка</option>
+                    <option value="4">Авиадоставка</option>
+                </select>
+                <button class="button button_submit">Расчитать</button>
+            </form>
+        </div>
+
+        <div class="modal" id="details">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle"></div>
+
+            <ul class="details-list">
+                <li class="details-list__item">ЖД</li>
+                <li class="details-list__item">ЖД</li>
+                <li class="details-list__item">ЖД</li>
+                <li class="details-list__item">ЖД</li>
+                <li class="details-list__item">ЖД</li>
+            </ul>  
+            <ul class="details-list">
+                <li class="details-list__item">Авто</li>
+                <li class="details-list__item">Авто</li>
+                <li class="details-list__item">Авто</li>
+                <li class="details-list__item">Авто</li>
+                <li class="details-list__item">Авто</li>
+            </ul>  
+            <ul class="details-list">
+                <li class="details-list__item">Авиа</li>
+                <li class="details-list__item">Авиа</li>
+                <li class="details-list__item">Авиа</li>
+                <li class="details-list__item">Авиа</li>
+                <li class="details-list__item">Авиа</li>
+            </ul>  
+        </div>
+
+    </div>
+    
     
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

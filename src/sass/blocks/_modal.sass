@@ -1,0 +1,83 @@
+.overlay
+    display: none
+    background-color: rgba($color: #000000, $alpha: 0.56)
+    position: fixed
+    width: 100%
+    height: 100%
+    top: 0
+
+.modal
+    width: 380px
+    min-height: 200px
+    position: absolute
+    left: 50%
+    top: 50%
+    padding: 36px 38px 40px
+    transform: translate(-50%, -50%)
+    background-color: #f2f2f2
+    &__close
+        position: absolute
+        top: 0
+        right: -40px
+        font-size: 41px
+        line-height: 21px
+        color: #ec644b
+        cursor: pointer
+    &__subtitle
+        margin-bottom: 11px
+        color: #0d0d0d
+        font-size: 19px
+        line-height: 19px
+        font-weight: 700
+        text-align: center
+    &__descr
+        margin-bottom: 25px
+        color: #0d0d0d
+        font-size: 14px
+        line-height: 14px
+        font-weight: 400
+        text-align: center
+
+.modal-calc
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin: 0 -5px 5px -5px
+    &__item
+        width: 25%
+        padding: 5px
+    &__label
+        margin: 0 0 0px 0
+        color: #3a3a3a
+        font-size: 12px
+        line-height: 12px
+    &__type
+        margin-bottom: 20px
+        color: #3a3a3a
+        font-size: 14px
+        border: 1px solid rgba(0, 0, 0, 0.21)
+
+.details-list
+    display: none
+    list-style: none
+    padding: 10px 0
+    &__item
+        position: relative
+        margin-bottom: 7px
+        &::before
+            content: ""
+            display: block
+            width: 5px
+            height: 5px
+            position: absolute
+            top: 8px
+            left: -15px
+            border-radius: 50%
+            background-color: #ec644b
+
+#consultation,
+#calc,
+#details
+    display: none
+
+

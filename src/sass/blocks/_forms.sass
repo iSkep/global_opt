@@ -23,11 +23,24 @@
         &_wide
             width: 813px
             height: 71px
-            border-radius: 8px
+        &_small
+            width: 100%
+            padding: 5px
+            margin: 0
+            border-radius: 3px
+            font-size: 15px
+            color: #000000
+            font-weight: 400
+    &_column
+        .feed-form__item
+            width: 100%
+            margin: 0 0 8px 0
+            &:nth-child(4)
+                margin-bottom: 20px
     &__comment
         margin: 8px 0 17px 0
+        border-radius: 8px
         resize: none
-
     &__border
         height: 166px
         width: 100%
@@ -41,6 +54,7 @@
         background-color: #fff
     &__outline
         outline: 13px solid #ffffff
+
 .line-break
     flex-basis: 100%
     height: 30px
@@ -70,3 +84,11 @@
         font-weight: 400
         line-height: 14px
         text-transform: uppercase
+
+.feed-form__item::-webkit-outer-spin-button,
+.feed-form__item::-webkit-inner-spin-button
+    -webkit-appearance: none
+    margin: 0
+
+.feed-form__item[type=number]
+    -moz-appearance: textfield
