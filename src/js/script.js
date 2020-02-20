@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $('.feedback__slider').slick({
         centerMode: true,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 10000,
         variableWidth: true,
         centerPadding: '0px',

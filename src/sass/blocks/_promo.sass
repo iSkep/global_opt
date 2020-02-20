@@ -1,7 +1,7 @@
 .promo
     min-height: 680px
     padding: 23px 0 82px 0
-    background: url('../img/main.jpg') no-repeat center
+    background: url('../img/main.jpg') no-repeat center/cover
     &__text
         margin-bottom: 17px
         text-align: center
@@ -66,6 +66,10 @@
         display: flex
         justify-content: space-between
         align-items: center
+    &__logo
+        width: 96px
+        img
+            width: 100%
 
 .callback
     width: 340px
@@ -73,6 +77,10 @@
     flex-direction: row
     justify-content: space-between
     text-align: right
+    &__wrap
+        display: flex
+        flex-direction: column
+        justify-content: center
     &__text
         padding-bottom: 5px
         color: #ffffff
