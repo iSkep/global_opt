@@ -178,11 +178,98 @@
             display: none
 
 
-// @media (max-width: 767.98px) 
+@media (max-width: 767.98px)
+    .container
+        max-width: 540px
+
+    .header
+        &__nav
+            width: 100%
+            margin-bottom: 20px
+        &__logo
+            margin-bottom: 0
+
+    .callback
+        padding: 0
+        &__phone
+            font-size: 19px
+            line-height: 19px
+    
+    .promo
+        &__header
+            font-size: 40px
+            line-height: 40px
+        &__text
+            font-size: 18px
+            line-height: 18px
+        &__subheader
+            font-size: 22px
+            line-height: 22px
+        &__line
+            width: 250px
+        &__circle
+            width: 8px
+            height: 8px
+        &__items
+            flex-wrap: wrap
+            justify-content: space-around
+        &__item
+            margin-bottom: 30px
+            width: 40%
+
+    .menu
+        position: fixed
+        top: 0
+        left: -100%
+        width: 50%
+        z-index: 10
+        height: 100vh
+        padding: 20px 15px
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        background-color: rgba(0, 0, 0, 0.8)
+        transition: 0.6s all
+        &_active
+            left: 0
+        &__item
+            padding-right: 0
+            border: none
+            margin: 10px 0
+        &__link
+            font-size: 20px
+
+    .menu-btn
+        position: fixed
+        right: 20px
+        top: 20px
+        width: 20px
+        height: 15px
+        &__line
+            display: block
+            width: 20px
+            height: 2px
+            margin-bottom: 3px
+            background-color: #fff
+            transition: 0.5s all
+        &_active
+            display: block
+        &_active > &__line:nth-child(1)
+            transform: rotate(-45deg) translateY(4px) translateX(-3px)
+        &_active > &__line:nth-child(2)
+            display: none
+        &_active > &__line:nth-child(3)
+            transform: rotate(45deg)    
+
+
+
+
+
+    
 // @media (max-width: 575.98px)
 
 
-.promo,
+// .promo,
 .advantages,
 .description,
 .subsection__agents,
@@ -195,4 +282,4 @@
 .map,
 .footer,
 .overlay
-    // display: none
+    display: none

@@ -29,4 +29,15 @@ $(document).ready(function () {
             $('.overlay, #details').fadeIn();
         });
     });
+
+    $('.menu-btn').on('click', function () {
+        $('.menu-btn').toggleClass('menu-btn_active');
+        $('.menu').toggleClass('menu_active');
+    });
+
+    $('.menu__item').on('click', function () {
+        $('.menu-btn').toggleClass('menu-btn_active');
+        $('.menu').toggleClass('menu_active');
+    });
+
 });
