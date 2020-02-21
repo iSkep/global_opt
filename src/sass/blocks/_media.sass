@@ -103,6 +103,8 @@
         &__desc
             font-size: 14px
             line-height: 20px
+        &__line
+            width: 340px
 
     .header
         &__nav
@@ -123,11 +125,11 @@
             flex-wrap: wrap
             justify-content: center
 
+    .consultation
+        padding-bottom: 60px
+
     .price-item
-        width: 267px
         margin: 15px
-        &__header
-            width: 261px
         &__price
             font-size: 28px
             line-height: 28px
@@ -135,13 +137,16 @@
     .feed-form
         padding: 0 30px
         &__item
-            width: 30%
             margin: 0 3px 10px 3px
+            &_small
+                margin: 0 0 5px 0
         &__border
             height: 212px
         &__comment
             width: 606px
             margin: 0 0 10px 0
+        &__border
+            height: 265px
 
     .line-break
         height: 10px    
@@ -176,6 +181,18 @@
             width: 80px
         &__line
             display: none
+
+    .modal
+        width: 340px
+        padding: 20px 15px 20px
+
+    .modal-calc
+        &__item
+            width: 23%
+            padding: 0
+
+    .details-list
+        padding: 10px 20px
 
 
 @media (max-width: 767.98px)
@@ -243,14 +260,16 @@
         position: fixed
         right: 20px
         top: 20px
-        width: 20px
-        height: 15px
+        width: 30px
+        height: 30px
+        padding-top: 10px
+        z-index: 99
         &__line
             display: block
             width: 20px
             height: 2px
-            margin-bottom: 3px
-            background-color: #fff
+            margin: 0 auto 3px
+            background-color: #ec644b
             transition: 0.5s all
         &_active
             display: block
@@ -259,27 +278,144 @@
         &_active > &__line:nth-child(2)
             display: none
         &_active > &__line:nth-child(3)
-            transform: rotate(45deg)    
+            transform: rotate(45deg)
 
+    .subtitle
+        font-size: 16px
 
+    .subsection
+        height: 250px
+        padding: 20px 0 10px 0
+        &__icon
+            width: 75px
+            height: 75px
+            margin: 0 auto 15px
+        &__title
+            margin-bottom: 5px
+            font-size: 22px
+        &__subtitle
+            font-size: 16px
+            line-height: 20px
 
+    .description
+        &__items
+            padding: 37px 0 10px 0
+        &__item
+            width: 100%
+            margin-bottom: 40px
+        &__image
+            margin-bottom: 10px
 
+    .price
+        padding: 53px 0 40px 0
+        &__items
+            padding-top: 0
 
+    .feed-form
+        &__border
+            height: 250px
+            top: -52px
     
-// @media (max-width: 575.98px)
+    .form-container
+        max-width: 340px
+
+    .questions
+        padding: 15px 0 0px 0
+
+    .map
+        height: 320px
+        iframe
+            height: 320px
+
+    .footer
+        height: 150px
+        &__content
+            justify-content: space-around
+        &__logo
+            width: 60px
+
+@media (max-width: 575.98px)
+    .container
+        width: 100%
+        padding-left: 15px
+        padding-right: 15px
+
+    .promo
+        padding: 23px 0 40px 0;
+        &__header
+            font-size: 35px
+            line-height: 35px
+
+    .menu
+        &__link
+            font-size: 18px
+
+    .callback
+        width: 100%
+        justify-content: center
+        flex-wrap: wrap
+        &__wrap
+            margin-right: 20px
+            margin-bottom: 5px
+        &__phone
+            font-size: 14px
+            line-height: 14px
+
+    .button
+        width: 140px
+    
+    .modal
+        width: 100%
+        &__close
+            right: 0
+
+    .advantages
+        &__item
+            width: 100%
+            padding-left: 70px
+        &__desc
+            width: 100%
+            text-align: justify
+
+    .description
+        &__image
+            width: 200px
+
+    .price-item
+        width: 100%
+        height: auto
+        padding: 2px 2px 20px 2px
+        &__header
+            width: 100%
+            height: 40px
+
+    .scheme
+        &__title
+            font-size: 14px
+        &__desc
+            font-size: 12px
+
+    .footer
+        height: 140px
+        &__content
+            width: 100%
+        &__logo
+        &__title
+            font-size: 14px
+            text-align: center
 
 
 // .promo,
-.advantages,
-.description,
-.subsection__agents,
-.price,
-.consultation,
-.subsection__managers,
-.scheme,
-.feedback,
-.questions,
-.map,
-.footer,
-.overlay
-    display: none
+// .advantages,
+// .description,
+// .subsection__agents,
+// .price,
+// .consultation,
+// .subsection__managers,
+// .scheme,
+// .feedback,
+// .questions,
+// .map,
+// .footer,
+// .overlay
+//     display: none

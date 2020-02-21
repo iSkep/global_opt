@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $('.feedback__slider').slick({
         centerMode: true,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 10000,
         variableWidth: true,
         centerPadding: '0px',
@@ -40,4 +40,16 @@ $(document).ready(function () {
         $('.menu').toggleClass('menu_active');
     });
 
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 1200) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
+
+    $("a[href='#up']").click(function () {
+        $("html, body").animate({ scrollTop: $('#up').offset().top + "px" });
+        return false;
+    });
 });
