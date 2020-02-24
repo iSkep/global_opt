@@ -48,8 +48,10 @@ $(document).ready(function () {
         }
     });
 
-    $("a[href='#up']").click(function () {
-        $("html, body").animate({ scrollTop: $('#up').offset().top + "px" });
-        return false;
+    $("a[href^='#']").on("click", function (event) {
+        event.preventDefault();
+        var _href  = $(this).attr('href'),
+            top = $(_href).offset().top + "px";
+        $('body, html').animate({scrollTop: top});
     });
 });
