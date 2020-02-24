@@ -54,4 +54,5 @@ $(document).ready(function () {
             top = $(_href).offset().top + "px";
         $('body, html').animate({scrollTop: top});
     });
+    new WOW().init();
 });
