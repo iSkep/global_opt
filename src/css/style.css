@@ -205,6 +205,8 @@
   text-transform: uppercase;
   font-size: 12px;
   line-height: 12px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .button:hover {
@@ -500,11 +502,19 @@
   flex-wrap: wrap;
 }
 
+.feed-form__wrap {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
 .feed-form__item {
   width: 268px;
   height: 45px;
   padding: 17px 28px;
-  margin: 0 3px 0 3px;
+  margin: 0 3px 5px 3px;
   border: 1px solid rgba(0, 0, 0, 0.21);
   background-color: #ffffff;
   border-radius: 24px;
@@ -527,7 +537,7 @@
 .feed-form__item_small {
   width: 100%;
   padding: 5px;
-  margin: 0;
+  margin: 0 0 5px 0;
   border-radius: 3px;
   font-size: 15px;
   color: #000000;
@@ -550,7 +560,7 @@
 }
 
 .feed-form__border {
-  height: 166px;
+  height: 171px;
   width: 100%;
   position: absolute;
   top: -68px;
@@ -614,6 +624,23 @@
 
 .feed-form__item[type=number] {
   -moz-appearance: textfield;
+}
+
+.error {
+  font-size: 12px;
+  line-height: 12px;
+  border: 1px solid red;
+}
+
+label.error {
+  color: #ff0000;
+  border: none;
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
+.consultation label.error {
+  margin: 0px 0 -12px 0;
 }
 
 .scheme {
@@ -1084,6 +1111,9 @@
   .consultation {
     padding-bottom: 60px;
   }
+  .consultation label.error {
+    margin: 0px 0 15px 0;
+  }
   .price-item {
     margin: 15px;
   }
@@ -1094,21 +1124,12 @@
   .feed-form {
     padding: 0 30px;
   }
-  .feed-form__item {
-    margin: 0 3px 10px 3px;
-  }
-  .feed-form__item_small {
-    margin: 0 0 5px 0;
-  }
-  .feed-form__border {
-    height: 212px;
-  }
   .feed-form__comment {
     width: 606px;
     margin: 0 0 10px 0;
   }
   .feed-form__border {
-    height: 265px;
+    height: 255px;
   }
   .line-break {
     height: 10px;
@@ -1128,6 +1149,11 @@
   }
   .feedback__item {
     width: 270px;
+  }
+  .questions {
+    height: auto;
+    min-height: 438px;
+    background: url("../img/form_bg.jpg") no-repeat center/cover;
   }
   .footer {
     height: 160px;
@@ -1306,14 +1332,17 @@
     padding-top: 0;
   }
   .feed-form__border {
-    height: 250px;
-    top: -52px;
+    display: none;
+  }
+  .consultation .feed-form {
+    border: 1px solid #898989;
+    padding: 15px 30px;
   }
   .form-container {
     max-width: 340px;
   }
   .questions {
-    padding: 15px 0 0px 0;
+    padding: 15px 0 15px 0;
   }
   .map {
     height: 320px;

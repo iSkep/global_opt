@@ -222,9 +222,15 @@
             </div>
             <form class="feed-form" action="#">
                 <div class="feed-form__border"></div>
-                <input class="feed-form__item" type="text" placeholder="Ваше имя..." name="name">
-                <input class="feed-form__item" type="tel" placeholder="Ваш номер телефона..." name="phone">
-                <input class="feed-form__item" type="email" placeholder="Ваш e-mail..." name="email">
+                <div class="feed-form__wrap">
+                    <input class="feed-form__item" type="text" placeholder="Ваше имя..." name="name">
+                </div>
+                <div class="feed-form__wrap">
+                    <input class="feed-form__item" type="tel" placeholder="Ваш номер телефона..." name="phone">
+                </div>
+                <div class="feed-form__wrap">
+                    <input class="feed-form__item" type="email" placeholder="Ваш e-mail..." name="email">
+                </div>
                 <div class="line-break"></div>
                 <button class="button button_submit feed-form__outline">Отправить заявку</button>
             </form>
@@ -345,9 +351,15 @@
                     <div class="form-container__subtitle">Напишите нам!</div>
                 </div>
                 <form class="feed-form" action="#">
-                    <input class="feed-form__item" type="text" placeholder="Ваше имя..." name="name">
-                    <input class="feed-form__item" type="tel" placeholder="Ваш номер телефона..." name="phone">
-                    <input class="feed-form__item" type="email" placeholder="Ваш e-mail..." name="email">
+                    <div class="feed-form__wrap">
+                        <input class="feed-form__item" type="text" placeholder="Ваше имя..." name="name">
+                    </div>
+                    <div class="feed-form__wrap">
+                        <input class="feed-form__item" type="tel" placeholder="Ваш номер телефона..." name="phone">
+                    </div>
+                    <div class="feed-form__wrap">
+                        <input class="feed-form__item" type="email" placeholder="Ваш e-mail..." name="email">
+                    </div>
                     <textarea class="feed-form__item feed-form__item_wide feed-form__comment" placeholder="Сообщение..." name="comment"></textarea>
                     <button class="button button_submit">Отправить заявку</button>
                 </form>
@@ -395,19 +407,19 @@
                 <div class="modal-calc">
                     <div class="modal-calc__item">
                         <label class="modal-calc__label" for="modal-calc__weight">Вес</label>
-                        <input class="feed-form__item feed-form__item_small" id="modal-calc__weight" type="text" name="weight" autocomplete="off" placeholder="кг">
+                        <input class="feed-form__item feed-form__item_small" id="modal-calc__weight" type="number" name="weight" autocomplete="off" placeholder="кг">
                     </div>
                     <div class="modal-calc__item">
                         <label class="modal-calc__label" for="modal-calc__length">Длина</label>
-                        <input class="feed-form__item feed-form__item_small" id="modal-calc__length" type="text" name="length" autocomplete="off" placeholder="см">
+                        <input class="feed-form__item feed-form__item_small" id="modal-calc__length" type="number" name="length" autocomplete="off" placeholder="см">
                     </div>
                     <div class="modal-calc__item">
                         <label class="modal-calc__label" for="modal-calc__width">Ширина</label>
-                        <input class="feed-form__item feed-form__item_small" id="modal-calc__width" type="text" name="width" autocomplete="off" placeholder="см">
+                        <input class="feed-form__item feed-form__item_small" id="modal-calc__width" type="number" name="width" autocomplete="off" placeholder="см">
                     </div>
                     <div class="modal-calc__item">
                         <label class="modal-calc__label" for="modal-calc__height">Высота</label>
-                        <input class="feed-form__item feed-form__item_small" id="modal-calc__height" type="text" name="height" autocomplete="off" placeholder="см">
+                        <input class="feed-form__item feed-form__item_small" id="modal-calc__height" type="number" name="height" autocomplete="off" placeholder="см">
                     </div>
                 </div>
                 <select class="modal-calc__type" name="transport" id="typeselect">
@@ -439,6 +451,8 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

@@ -127,6 +127,8 @@
 
     .consultation
         padding-bottom: 60px
+        label.error
+            margin: 0px 0 15px 0
 
     .price-item
         margin: 15px
@@ -136,17 +138,11 @@
 
     .feed-form
         padding: 0 30px
-        &__item
-            margin: 0 3px 10px 3px
-            &_small
-                margin: 0 0 5px 0
-        &__border
-            height: 212px
         &__comment
             width: 606px
             margin: 0 0 10px 0
         &__border
-            height: 265px
+            height: 255px
 
     .line-break
         height: 10px    
@@ -167,6 +163,11 @@
             max-width: 720px
         &__item
             width: 270px
+    
+    .questions
+        height: auto
+        min-height: 438px
+        background: url('../img/form_bg.jpg') no-repeat center/cover
 
     .footer
         height: 160px
@@ -313,14 +314,18 @@
 
     .feed-form
         &__border
-            height: 250px
-            top: -52px
+            display: none
+
+    .consultation
+        .feed-form
+            border: 1px solid #898989
+            padding: 15px 30px
     
     .form-container
         max-width: 340px
 
     .questions
-        padding: 15px 0 0px 0
+        padding: 15px 0 15px 0
 
     .map
         height: 320px

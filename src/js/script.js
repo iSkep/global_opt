@@ -50,9 +50,64 @@ $(document).ready(function () {
 
     $("a[href^='#']").on("click", function (event) {
         event.preventDefault();
-        var _href  = $(this).attr('href'),
+        var _href = $(this).attr('href'),
             top = $(_href).offset().top + "px";
-        $('body, html').animate({scrollTop: top});
+        $('body, html').animate({ scrollTop: top });
     });
-    new WOW().init();
+
+    function valideForms(form) {
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                phone: "required",
+                weight: "required",
+                length: "required",
+                width: "required",
+                height: "required",
+                email: {
+                    required: true,
+                    email: true
+                },
+                comment: {
+                    required: false
+                },
+            },
+            messages: {
+                name: {
+                    required: "Введите своё имя",
+                    minlength: jQuery.validator.format("Минимум {0} символа")
+                },
+                phone: "Введите номер телефона",
+                weight: "Введите вес",
+                length: "Введите длину",
+                width: "Введите ширину",
+                height: "Введите высоту",
+                email: {
+                    required: "Введите почтовый адрес",
+                    email: "Адрес должен быть в формате name@domain.com"
+                }
+            }
+        });
+    };
+
+    valideForms('.consultation form');
+    valideForms('#consultation form');
+    valideForms('#questions form');
+    valideForms('#calc form');
+
+    $('input[name=phone]').mask("+38 (099) 999-99-99", { placeholder: "x" });
+
+    wow = new WOW(
+        {
+            boxClass: 'wow',      // default
+            animateClass: 'animated', // default
+            offset: 0,          // default
+            mobile: false,       // default
+            live: true        // default
+        }
+    )
+    wow.init();
 });
