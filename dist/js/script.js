@@ -98,7 +98,7 @@ $(document).ready(function () {
     valideForms('#questions form');
     valideForms('#calc form');
 
-    $('input[name=phone]').mask("+38 (099) 999-99-99", { placeholder: "x" });
+    $('input[name=phone]').mask("+7 (999) 999-99-99", { placeholder: "x" });
 
     wow = new WOW(
         {
